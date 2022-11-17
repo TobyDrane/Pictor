@@ -1,0 +1,28 @@
+{
+  "name": "pictor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/pictor.css",
+  "scripts": {
+    "start": "http-server -p 1234",
+    "build": "rollup --config rollup.config.js",
+    "publish": "np"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TobyDrane/Pictor.git"
+  },
+  "author": "Toby Drane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TobyDrane/Pictor/issues"
+  },
+  "homepage": "https://github.com/TobyDrane/Pictor#readme",
+  "devDependencies": {
+    "rollup": "^3.3.0"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "np": "^7.6.2"
+  }
+}
