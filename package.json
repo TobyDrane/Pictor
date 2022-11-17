@@ -6,7 +6,8 @@
   "scripts": {
     "start": "http-server -p 1234",
     "build": "rollup --config rollup.config.js --bundleConfigAsCjs",
-    "publish": "np"
+    "publish": "np",
+    "test": ""
   },
   "repository": {
     "type": "git",
