@@ -1,11 +1,11 @@
 {
-  "name": "pictor",
-  "version": "1.0.0",
+  "name": "pictor-styles",
+  "version": "0.0.0",
   "description": "",
   "main": "src/pictor.css",
   "scripts": {
     "start": "http-server -p 1234",
-    "build": "rollup --config rollup.config.js",
+    "build": "rollup --config rollup.config.js --bundleConfigAsCjs",
     "publish": "np"
   },
   "repository": {
@@ -21,8 +21,13 @@
   "devDependencies": {
     "rollup": "^3.3.0"
   },
+  "files": [
+    "src",
+    "dist"
+  ],
   "dependencies": {
     "http-server": "^14.1.1",
-    "np": "^7.6.2"
+    "np": "^7.6.2",
+    "rollup-plugin-postcss": "^4.0.2"
   }
 }
