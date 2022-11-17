@@ -1,5 +1,5 @@
 :root {
-    --font-stack: 'Inter', system-ui, sans-serif;
+    --font-stack: "Inter", system-ui, sans-serif;
     --line-height: 15px;
 
     /* colors */
@@ -7,21 +7,30 @@
     --color-white-hover: #fdfdfd;
     --color-heading: #212121;
     --color-heading-hover: #403e3e;
-    --text-color: #000000;
-    --color-theme-1: #43A047;
-    --color-theme-1-hover: #4CAF50;
-    --color-theme-2: #039BE5;
-    --color-theme-2-hover: #03A9F4;
-    --color-theme-3: #5E35B1;
-    --color-theme-3-hover: #673AB7;
-    --color-theme-4: #E53935;
-    --color-theme-4-hover: #F44336;
+    --color-text: #000000;
+
+    --color-button-filled-text: #fff;
+    --color-button-outline-text: #212121;
+    --color-button-theme-text: #fff;
+
+    --color-theme-1: #43a047;
+    --color-theme-1-hover: #4caf50;
+    --color-theme-2: #039be5;
+    --color-theme-2-hover: #03a9f4;
+    --color-theme-3: #5e35b1;
+    --color-theme-3-hover: #673ab7;
+    --color-theme-4: #e53935;
+    --color-theme-4-hover: #f44336;
 
     /* dark theme colors */
     --invert-color-white: #212121;
     --invert-color-white-hover: #493e3e;
     --invert-color-heading: #fff;
     --invert-color-heading-hover: #fdfdfd;
+    --invert-color-text: #fff;
+
+    --invert-color-button-filled-text: #212121;
+    --invert-color-button-outline-text: #fff;
 }
 
 body {
@@ -44,20 +53,45 @@ h6 {
     margin: 12px 0px;
 }
 
-.bold { font-weight: bold }
-.clean { text-decoration: none }
-.underline { text-decoration: underline }
+.bold {
+    font-weight: bold;
+}
 
-h1 { font-size: 3rem }
-h2 { font-size: 2rem }
-h3 { font-size: 1.6rem }
-h4 { font-size: 1.25rem }
-h5 { font-size: 1rem }
-h6 { font-size: 0.75rem }
+.clean {
+    text-decoration: none;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 0.75rem;
+}
 
 p {
     font-weight: 300;
-    color: var(--text-color);
+    color: var(--color-text);
     line-height: 1.2rem;
     font-size: 0.9rem;
     margin: 0;
@@ -75,39 +109,40 @@ p {
     font-size: 0.9rem;
     font-weight: 500;
     font-family: var(--font-stack);
-    color: var(--color-white);
+    color: var(--color-button-filled-text);
     background-color: var(--color-heading);
     border: none;
     cursor: pointer;
 }
+
 .btn:hover {
-    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1)
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
 }
 
 .btn-light {
     background-color: var(--color-white);
-    color: var(--color-heading);
+    color: var(--color-button-outline-text);
     border: 1px solid var(--color-heading);
 }
 
 .btn-theme-1 {
     background-color: var(--color-theme-1);
-    color: var(--color-white);
+    color: #fff;
 }
 
 .btn-theme-2 {
     background-color: var(--color-theme-2);
-    color: var(--color-white);
+    color: #fff;
 }
 
 .btn-theme-3 {
     background-color: var(--color-theme-3);
-    color: var(--color-white);
+    color: #fff;
 }
 
 .btn-theme-4 {
     background-color: var(--color-theme-4);
-    color: var(--color-white);
+    color: #fff;
 }
 
 /* dark mode theme */
@@ -116,4 +151,8 @@ body.dark-mode {
     --color-white-hover: var(--invert-color-white-hover);
     --color-heading: var(--invert-color-heading);
     --color-heading-hover: var(--invert-color-heading-hover);
+    --color-text: var(--invert-color-text);
+
+    --color-button-filled-text: var(--invert-color-button-filled-text);
+    --color-button-outline-text: var(--invert-color-button-outline-text);
 }
