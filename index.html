@@ -1,55 +1,80 @@
-<title>Pictor</title>
+<html>
+  <head>
+    <title>Pictor</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet" />
+    <link rel="stylesheet" href="src/pictor.css" />
+  </head>
 
-<meta name="viewport" content="width=device-width,initial-scale=1" />
+  <body>
+    <button
+      style="margin-left: 20%; margin-top: 1%"
+      class="btn"
+      id="theme-toggle"
+    >
+      Toggle Theme
+    </button>
 
-<link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet">
-                                                
-<link rel="stylesheet" href="src/pictor.css" />
+    <main style="margin: 0% 20%; align-items: center">
+      <h1>Typography</h1>
+      <hr />
 
-<body>
-    <button style="margin-left: 20%; margin-top: 1%;" class="btn" id="theme-toggle">Toggle Theme</button>
+      <h1>Heading Size 1</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Pharetra convallis
+        posuere morbi leo.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Pharetra convallis
+        posuere morbi leo.
+      </p>
 
-    <main style="margin: 0% 20%; align-items: center;">
-        <br />
-        <hr />
+      <h2>Heading Size 2</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Pharetra convallis
+        posuere morbi leo.
+      </p>
 
-        <h1>Heading Size 1</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra convallis posuere morbi leo.</p>
+      <h3>Heading Size 3</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Pharetra convallis
+        posuere morbi leo.
+      </p>
 
-        <h2>Heading Size 2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra convallis posuere morbi leo.</p>
+      <h4>Heading Size 4</h4>
+      <h5>Heading Size 5</h5>
+      <h6>Heading Size 6</h6>
 
-        <h3>Heading Size 3</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra convallis posuere morbi leo.</p>
+      <h1>Buttons</h1>
+      <hr />
 
-        <h4>Heading Size 4</h4>
-        <h5>Heading Size 5</h5>
-        <h6>Heading Size 6</h6>
-        
-        <hr />
-        <br />
+      <button class="btn">Label</button>
+      <button class="btn btn-light">Label</button>
+      <button class="btn btn-theme-1">Label</button>
+      <button class="btn btn-theme-2">Label</button>
+      <button class="btn btn-theme-3">Label</button>
+      <button class="btn btn-theme-4">Label</button>
 
-        <button class="btn">Label</button>
-        <button class="btn btn-light">Label</button>
-        <button class="btn btn-theme-1">Label</button>
-        <button class="btn btn-theme-2">Label</button>
-        <button class="btn btn-theme-3">Label</button>
-        <button class="btn btn-theme-4">Label</button>
+      <h1>Inputs</h1>
+      <hr />
 
+      <input class="inpt" type="text" placeholder="First name..." />
+      <input class="inpt" type="text" placeholder="Disabled" disabled />
     </main>
-</body>
+  </body>
 
-<script>
-let currentTheme = "light-mode"
-const element = document.getElementById("theme-toggle")
-element.onclick = () => {
-    currentTheme = currentTheme === 'light-mode' ? 'dark-mode' : 'light-mode'
-    document.body.classList.remove('light-mode')
-    document.body.classList.remove('dark-mode')
-    document.body.classList.add(currentTheme)
-}
-
-
-</script>
-
-</title>
+  <script>
+    let currentTheme = "light-mode";
+    const element = document.getElementById("theme-toggle");
+    element.onclick = () => {
+      currentTheme = currentTheme === "light-mode" ? "dark-mode" : "light-mode";
+      document.body.classList.remove("light-mode");
+      document.body.classList.remove("dark-mode");
+      document.body.classList.add(currentTheme);
+    };
+  </script>
+</html>
