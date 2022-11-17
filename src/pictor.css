@@ -12,6 +12,7 @@
     --color-button-filled-text: #fff;
     --color-button-outline-text: #212121;
     --color-button-theme-text: #fff;
+    --color-button-shadow: rgba(0, 0, 0, 0.2);
 
     --color-theme-1: #43a047;
     --color-theme-1-hover: #4caf50;
@@ -31,6 +32,7 @@
 
     --invert-color-button-filled-text: #212121;
     --invert-color-button-outline-text: #fff;
+    --invert-color-button-shadow: rgba(255, 255, 255, 0.2);
 }
 
 body {
@@ -116,7 +118,7 @@ p {
 }
 
 .btn:hover {
-    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 16px 0 var(--color-button-shadow);
 }
 
 .btn-light {
@@ -127,22 +129,22 @@ p {
 
 .btn-theme-1 {
     background-color: var(--color-theme-1);
-    color: #fff;
+    color: var(--color-button-theme-text);
 }
 
 .btn-theme-2 {
     background-color: var(--color-theme-2);
-    color: #fff;
+    color: var(--color-button-theme-text);
 }
 
 .btn-theme-3 {
     background-color: var(--color-theme-3);
-    color: #fff;
+    color: var(--color-button-theme-text);
 }
 
 .btn-theme-4 {
     background-color: var(--color-theme-4);
-    color: #fff;
+    color: var(--color-button-theme-text);
 }
 
 /* dark mode theme */
@@ -155,4 +157,5 @@ body.dark-mode {
 
     --color-button-filled-text: var(--invert-color-button-filled-text);
     --color-button-outline-text: var(--invert-color-button-outline-text);
+    --color-button-shadow: var(--invert-color-button-shadow);
 }
